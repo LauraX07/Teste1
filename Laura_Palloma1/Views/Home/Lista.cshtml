@@ -1,0 +1,31 @@
+﻿@model Laura_Palloma1.Models.Pessoa
+
+@{
+    ViewBag.Title = "Lista de Cliente Cadastrados";
+}
+
+<!DOCTYPE html>
+
+<h2>Clientes Cadastrados</h2>
+<div>
+    <b> @Html.LabelFor( x => x.PessoaId)</b>
+</div>
+<div>
+    <b> @Model.PessoaId</b>
+</div>
+<div>
+    <b> @Html.LabelFor(x => x.Nome)</b>
+</div>
+<div>
+    <b> @Model.Nome</b>
+</div>
+<div>
+    <b> @Html.LabelFor(x => x.Email)</b>
+</div>
+<div>
+    <b> @Model.Email</b>
+</div>
+<div>
+    <b> @Html.ActionLink("Voltar", "Index", "Home")</b>
+</div>
+    

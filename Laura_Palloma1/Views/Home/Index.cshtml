@@ -3,5 +3,29 @@
     ViewData["Title"] = "Cadastro do Cliente";
 }
 
-
+<div class="text-center">
+    <h3 class="display-4">Cadastro de Clientes</h3>
+    @using (Html.BeginForm("Lista", "Home", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Informações de pessoas</legend>
+        <div>
+                @Html.EditorFor( x => x.PessoaId)
+        </div>
+        <div>
+                @Html.LabelFor(x => x.Nome)
+        </div>
+        <div>
+                @Html.EditorFor(x => x.Nome)
+        </div>
+        <div>
+                @Html.LabelFor(x => x.Email)
+        </div>
+        <div>
+                @Html.EditorFor(x => x.Email)
+        </div>
+        <p><input type="submit" value="Enviar" /></p>
+        </fieldset>
+    }
+</div>
 
